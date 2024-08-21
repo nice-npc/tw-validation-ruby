@@ -1,4 +1,4 @@
-# tw-validation-ruby
+# TwValidation
 
 TODO: Delete this and the text below, and describe your gem
 
@@ -28,8 +28,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/nice-npc/tw-validation-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/nice-npc/tw-validation-ruby/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tw_validation. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/tw_validation/blob/main/CODE_OF_CONDUCT.md).
 
 ## Code of Conduct
 
-Everyone interacting in the TwValidation project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/nice-npc/tw-validation-ruby/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the TwValidation project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/tw_validation/blob/main/CODE_OF_CONDUCT.md).
