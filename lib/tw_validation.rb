@@ -5,6 +5,7 @@ require_relative "tw_validation/version"
 module TwValidation
   class Error < StandardError; end
 
+  # Id validator
   class Id
     def self.check(id)
       id = id.chars
@@ -19,7 +20,7 @@ module TwValidation
       return false if id[1] !~ /[12]/
 
       # 3-10 should be numbers
-      return false if id[2..-1].any? { |v| v !~ /\d/ }
+      return false if id[2..].any? { |v| v !~ /\d/ }
 
       # Checksum
       # rule: https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%8B%E6%B0%91%E8%BA%AB%E5%88%86%E8%AD%89#cite_note-51
@@ -31,7 +32,7 @@ module TwValidation
       id = id.map(&:to_i)
 
       # (first letter + second letter * 8 + 3rd letter * 7 + ... + 9th letter * 1 + 10th letter * 1) % 10 == 0
-      id.each_with_index.sum { |v, i| v * (9 - i) } % 10 == 0
+      (id.each_with_index.sum { |v, i| v * (9 - i) } % 10).zero?
     end
   end
 end
